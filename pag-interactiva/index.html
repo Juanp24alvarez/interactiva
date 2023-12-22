@@ -11,10 +11,10 @@
     <div class="container">
         <div class="row mt-4">
             <div class="col-md-6">
-                <select id="language" class="form-select">
+                <select id="idioma" class="form-select" onchange="idioma()">
                     <option class="idioma" >Seleccione Idioma</option>
-                    <option value="es" >Español</option>
-                    <option value="en" >Inglés</option>
+                    <option value="1" >Español</option>
+                    <option value="2" >Inglés</option>
                 </select>
             </div>
             <div class="col-md-6">
@@ -33,7 +33,7 @@
                     <div class="card-body">
                         <span class="price">$ 8.900</span>
                         <h2 class="name-product">BBQ Crunch</h2>
-                        <p class="description-product" >1 Sándwich BBQ Crunch (1 Filete de pollo apanado)</p>
+                        <p class="card-text"  id="p1">1 Sándwich BBQ Crunch (1 Filete de pollo apanado)</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <div class="card-body">
                         <span class="price">$ 15.900</span>
                         <h2 class="name-product">Kentucky Sándwich</h2>
-                        <p class="description-product">1Kentucky hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, pepinillos)</p>
+                        <p class="card-text" id="p2">1Kentucky hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, pepinillos)</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <div class="card-body">
                         <span class="price">$ 15.900</span>
                         <h2 class="name-product"> Combo BBQ Crunch</h2>
-                        <p class="description-product">1Sándwich BBQ Crunch (1 Filete de pollo apanado) + 1Papa Pequeña + 1Gaseosa PET</p>
+                        <p class="card-text" id="p3">1Sándwich BBQ Crunch (1 Filete de pollo apanado) + 1Papa Pequeña + 1Gaseosa PET</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     <div class="card-body">
                         <span class="price">$ 16.900</span>
                         <h2 class="name-product">Kentucky Coronel Sandwich</h2>
-                        <p class="description-product">1Kentucky Coronel hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, Ensalada)</p>
+                        <p class="card-text" id="p4">1Kentucky Coronel hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, Ensalada)</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <div class="card-body">
                         <span class="price">$ 21.900</span>
                         <h2 >Combo Kentucky Sandwich</h2>
-                        <p class="description-product">1Kentucky hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, pepinillos)</p>
+                        <p class="card-text" id="p5">1Kentucky hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, pepinillos)</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="card-body">
                         <span class="price">$ 22.900</span>
                         <h2 class="name-product">Combo Kentucky Coronel Sandwich</h2>
-                        <p class="description-product">1Kentucky Coronel hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, Ensalada)</p>
+                        <p class="card-text" id="p6">1Kentucky Coronel hamburguesa/Sandwich (1Filete de pechuga de pollo apanado, Ensalada)</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                     <div class="card-body">
                         <span class="price">$ 23.900</span>
                         <h2 class="name-product"> Combo BBQ Crunch</h2>
-                        <p class="description-product">1Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crispy)</p>
+                        <p class="card-text" id="p7">1Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crispy)</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                     <div class="card-body">
                         <span class="price">$ 29.900</span>
                         <h2 class="name-product">Combo Sandwich Crispy BBQ</h2>
-                        <p class="description-product">1Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crispy)</p>
+                        <p class="card-text" id="p8">1Sándwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crispy)</p>
                         <button class="btn btn-danger w-100">Comprar</button>
                     </div>
                 </div>
